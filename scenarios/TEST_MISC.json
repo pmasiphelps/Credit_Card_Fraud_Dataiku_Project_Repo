@@ -3,19 +3,19 @@
   "name": "TEST_misc",
   "active": false,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "patrick.masi-phelps@dataiku.com"
-    },
-    "lastModifiedOn": 1694479513043,
-    "extendedProperties": {}
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
     "lastModifiedOn": 1694479648017,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "patrick.masi-phelps@dataiku.com"
+    },
+    "lastModifiedOn": 1694479684260,
     "extendedProperties": {}
   },
   "checklists": {
