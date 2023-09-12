@@ -5,10 +5,6 @@
     {
       "objectId": "TRANSACTIONS_filtered_z_score_pmp_dev",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "compute_TRANSACTIONS_filtered_z_score_pmp_dev",
-      "objectType": "RECIPE"
     }
   ],
   "shared": [],
