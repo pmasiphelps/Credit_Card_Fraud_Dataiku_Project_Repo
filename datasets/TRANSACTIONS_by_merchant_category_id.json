@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694481570586,
+    "lastModifiedOn": 1694534607663,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -65,6 +65,7 @@
     "columns": [
       {"name":"merchant_category_id","type":"string","comment":"","maxLength":4194304},
       {"name":"authorized_flag_avg","type":"double"},
+      {"name":"authorized_flag_sum","type":"bigint"},
       {"name":"purchase_amount_avg","type":"double"},
       {"name":"purchase_amount_sum","type":"double"},
       {"name":"days_active_avg","type":"double"},
