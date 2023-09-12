@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694478271218,
+    "lastModifiedOn": 1694479070042,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -75,6 +75,7 @@
       {"name":"card_internal_card_mapping","type":"string","maxLength":4194304},
       {"name":"card_first_active_month","type":"string","maxLength":4194304},
       {"name":"days_active","type":"bigint"},
+      {"name":"days_active_bin","type":"string","maxLength":4194304},
       {"name":"card_reward_program","type":"string","maxLength":4194304},
       {"name":"card_latitude","type":"double"},
       {"name":"card_longitude","type":"double"},
