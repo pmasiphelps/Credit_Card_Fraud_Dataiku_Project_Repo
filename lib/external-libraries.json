@@ -12,6 +12,7 @@
     }
   },
   "pythonPath": [
+     "python",
     "python/feature_engineering"
   ],
   "rsrcPath": [
