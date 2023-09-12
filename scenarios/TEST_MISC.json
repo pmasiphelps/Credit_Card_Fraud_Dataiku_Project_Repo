@@ -1,0 +1,39 @@
+{
+  "type": "custom_python",
+  "name": "TEST_misc",
+  "active": false,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "patrick.masi-phelps@dataiku.com"
+    },
+    "lastModifiedOn": 1694479513043,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "patrick.masi-phelps@dataiku.com"
+    },
+    "lastModifiedOn": 1694479513043,
+    "extendedProperties": {}
+  },
+  "checklists": {
+    "checklists": []
+  },
+  "delayedTriggersBehavior": {
+    "delayWhileRunning": true,
+    "squashDelayedTriggers": true,
+    "suppressTriggersWhileRunning": true
+  },
+  "tags": [],
+  "triggers": [],
+  "reporters": [],
+  "params": {
+    "envSelection": {
+      "envMode": "INHERIT"
+    }
+  },
+  "automationLocal": false,
+  "customFields": {}
+}
