@@ -45,7 +45,7 @@
       "column": "authorized_flag",
       "count": false,
       "$idx": 1,
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "int",
       "concatDistinct": false,
@@ -472,6 +472,10 @@
           {
             "name": "authorized_flag_avg",
             "type": "double"
+          },
+          {
+            "name": "authorized_flag_sum",
+            "type": "bigint"
           },
           {
             "name": "purchase_amount_avg",

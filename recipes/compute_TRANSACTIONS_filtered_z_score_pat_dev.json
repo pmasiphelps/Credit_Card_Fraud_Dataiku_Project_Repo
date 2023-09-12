@@ -1,7 +1,16 @@
 {
-  "type": "grouping",
+  "type": "python",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
+  "params": {
+    "envSelection": {
+      "envMode": "INHERIT"
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "skipPrerunValidate": false
+  },
   "customMeta": {
     "kv": {}
   },
@@ -23,7 +32,7 @@
     "main": {
       "items": [
         {
-          "ref": "TRANSACTIONS_by_merchant_category_id",
+          "ref": "TRANSACTIONS_filtered_z_score_pat_dev",
           "appendMode": false
         }
       ]
@@ -31,11 +40,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694534609167,
+    "lastModifiedOn": 1694534303796,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -43,7 +52,7 @@
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694480871766,
+    "lastModifiedOn": 1694534291800,
     "extendedProperties": {}
   },
   "tags": [],

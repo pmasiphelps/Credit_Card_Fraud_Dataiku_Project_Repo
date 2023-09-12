@@ -1,0 +1,20 @@
+{
+  "name": "Pat Dev",
+  "color": "#0F786B",
+  "items": [
+    {
+      "objectId": "TRANSACTIONS_filtered_z_score_pat_dev",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_TRANSACTIONS_filtered_z_score_pat_dev",
+      "objectType": "RECIPE"
+    }
+  ],
+  "shared": [],
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

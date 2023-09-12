@@ -191,7 +191,7 @@
     },
     "dkuProperties": []
   },
-  "name": "Credit Card Fraud (pmp-dev)",
+  "name": "Credit Card Fraud (pat-dev-2)",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -248,11 +248,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694481545477,
+    "lastModifiedOn": 1694534594480,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -263,7 +263,7 @@
     "lastModifiedOn": 1694477030140,
     "extendedProperties": {}
   },
-  "shortDesc": "The project *Credit Card Fraud* was created by patrick.masi-phelps on Sep 12th 2023\nThe project *CREDIT_CARD_FRAUD_PMP_DEV* was copied from *CREDITCARDFRAUD* by patrick.masi-phelps on Sep 12th 2023",
+  "shortDesc": "The project *Credit Card Fraud* was created by patrick.masi-phelps on Sep 12th 2023\nThe project *CREDIT_CARD_FRAUD_PAT_DEV_2* was copied from *CREDITCARDFRAUD* by patrick.masi-phelps on Sep 12th 2023",
   "tags": [
     "duplicated"
   ],
