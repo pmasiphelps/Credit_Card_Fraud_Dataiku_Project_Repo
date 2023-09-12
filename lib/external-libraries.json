@@ -4,6 +4,10 @@
       "remote": "git@github.com:pmasiphelps/feature_engineering.git",
       "checkout": "refs/heads/main",
       "remotePath": "",
+      "lastHash": "9fee2d2f1a7903f9caad858e3d963908c7d122cb",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
       "isDirty": false
     }
   },
