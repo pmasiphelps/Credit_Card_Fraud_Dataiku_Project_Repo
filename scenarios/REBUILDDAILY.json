@@ -3,19 +3,19 @@
   "name": "Rebuild Daily",
   "active": false,
   "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "patrick.masi-phelps@dataiku.com"
-    },
-    "lastModifiedOn": 1694479059369,
-    "extendedProperties": {}
-  },
-  "versionTag": {
     "versionNumber": 1,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
     "lastModifiedOn": 1694479071648,
+    "extendedProperties": {}
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "patrick.masi-phelps@dataiku.com"
+    },
+    "lastModifiedOn": 1694479091871,
     "extendedProperties": {}
   },
   "checklists": {
@@ -44,13 +44,43 @@
         "minute": 0,
         "hour": 7,
         "timezone": "SERVER",
-        "lastUpdate": 1694479071648
+        "lastUpdate": 1694479091871
       }
     }
   ],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "build_2_true_d_TRANSACTIONS_filtered_z_score",
+        "type": "build_flowitem",
+        "name": "final filtered transactions dataset",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "TRANSACTIONS_filtered_z_score",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_FORCED_BUILD",
+          "autoUpdateSchemaBeforeEachRecipeRun": false,
+          "stopAtFlowZoneBoundary": false,
+          "refreshHiveMetastore": true,
+          "handleWarningsAs": "WARNING",
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
