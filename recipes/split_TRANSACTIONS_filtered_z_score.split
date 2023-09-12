@@ -3,14 +3,14 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 0,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
@@ -18,22 +18,24 @@
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "FILTERS",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": ""
     }
   ],
   "rangeSplits": [
@@ -88,12 +90,134 @@
       "filter": {
         "uiData": {
           "mode": "\u0026\u0026",
-          "conditions": []
+          "$latestOperator": "\u0026\u0026",
+          "$filterOptions": "rules",
+          "conditions": [
+            {
+              "input": "authorized_flag",
+              "col": "authorized_flag",
+              "$showList": false,
+              "num": 0,
+              "items": [],
+              "operator": "not empty string"
+            }
+          ]
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "transaction_id",
+                "type": "bigint"
+              },
+              {
+                "name": "authorized_flag",
+                "type": "double"
+              },
+              {
+                "name": "purchase_date",
+                "type": "date"
+              },
+              {
+                "name": "card_id",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_id",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_category_id",
+                "type": "bigint"
+              },
+              {
+                "name": "item_category",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "purchase_amount",
+                "type": "double"
+              },
+              {
+                "name": "signature_provided",
+                "type": "bigint"
+              },
+              {
+                "name": "card_internal_card_mapping",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_first_active_month",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "days_active",
+                "type": "bigint"
+              },
+              {
+                "name": "days_active_bin",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_reward_program",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "card_latitude",
+                "type": "double"
+              },
+              {
+                "name": "card_longitude",
+                "type": "double"
+              },
+              {
+                "name": "card_fico_score",
+                "type": "bigint"
+              },
+              {
+                "name": "card_age",
+                "type": "bigint"
+              },
+              {
+                "name": "merchant_merchant_id",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_merchant_category_id",
+                "type": "double"
+              },
+              {
+                "name": "merchant_subsector_description",
+                "type": "string",
+                "maxLength": 4194304
+              },
+              {
+                "name": "merchant_latitude",
+                "type": "double"
+              },
+              {
+                "name": "merchant_longitude",
+                "type": "double"
+              },
+              {
+                "name": "purchase_amount_abs_z_score",
+                "type": "double"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
       },
-      "outputIndex": 0
+      "outputIndex": 1
     }
   ]
 }
