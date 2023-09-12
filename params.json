@@ -28,7 +28,12 @@
       "exportSavedModelsRequiredVersions": false,
       "exportNotebooksWithOutputs": true,
       "includedDatasetsData": [],
-      "includedSavedModels": [],
+      "includedSavedModels": [
+        {
+          "id": "EH8MpM4K",
+          "name": "Predict authorized_flag (binary)"
+        }
+      ],
       "includedModelEvaluationStores": [],
       "includedManagedFolders": [],
       "includedCodeStudios": [],
@@ -243,11 +248,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "api:E3IHEZ4NLWXHKFOK"
+      "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694480363569,
+    "lastModifiedOn": 1694480397951,
     "extendedProperties": {}
   },
   "creationTag": {
