@@ -39,7 +39,25 @@
   },
   "owner": "patrick.masi-phelps@dataiku.com",
   "permissionsVersion": "V2",
-  "permissions": [],
+  "permissions": [
+    {
+      "group": "space_administrators",
+      "admin": true,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -225,11 +243,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
-      "login": "patrick.masi-phelps@dataiku.com"
+      "login": "api:E3IHEZ4NLWXHKFOK"
     },
-    "lastModifiedOn": 1694478425849,
+    "lastModifiedOn": 1694480363569,
     "extendedProperties": {}
   },
   "creationTag": {
