@@ -4,7 +4,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Predict authorized_flag (binary)",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1694481017226",
   "inlineVersions": [],
   "conditionalOutputs": [],
   "partitioning": {
@@ -3257,11 +3257,11 @@
   "lastTrainIndex": 1,
   "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694480247694,
+    "lastModifiedOn": 1694481197781,
     "extendedProperties": {}
   },
   "creationTag": {
