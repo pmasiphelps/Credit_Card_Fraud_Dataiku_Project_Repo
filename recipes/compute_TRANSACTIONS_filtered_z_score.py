@@ -16,6 +16,8 @@ TRANSACTIONS_prepared_df = TRANSACTIONS_prepared.get_dataframe()
 TRANSACTIONS_prepared_df = filter_df_by_zscore(TRANSACTIONS_prepared_df, "purchase_amount", zscore_threshold = 3)
 
 print("hi bundle v2")
+
+print("pmp change")
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # Write recipe outputs
 TRANSACTIONS_filtered_z_score = dataiku.Dataset("TRANSACTIONS_filtered_z_score")
