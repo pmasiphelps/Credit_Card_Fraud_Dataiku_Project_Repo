@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694480986583,
+    "lastModifiedOn": 1694481570586,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -68,6 +68,7 @@
       {"name":"purchase_amount_avg","type":"double"},
       {"name":"purchase_amount_sum","type":"double"},
       {"name":"days_active_avg","type":"double"},
+      {"name":"card_age_avg","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
