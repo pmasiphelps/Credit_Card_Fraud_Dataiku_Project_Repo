@@ -1,0 +1,177 @@
+{
+  "type": "Snowflake",
+  "managed": true,
+  "featureGroup": false,
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": true,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "patrick.masi-phelps@dataiku.com"
+    },
+    "lastModifiedOn": 1694480258954,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "patrick.masi-phelps@dataiku.com"
+    },
+    "lastModifiedOn": 1694480258954,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "params": {
+    "connection": "managed-snowflake",
+    "notReadyIfEmpty": false,
+    "mode": "table",
+    "partitioningType": "custom",
+    "normalizeDoubles": true,
+    "table": "${NODE}_${projectKey}_TRANSACTIONS_UNKNOWN_SCORED",
+    "schema": "PUBLIC",
+    "tableCreationMode": "auto",
+    "writeInsertBatchSize": 10000,
+    "writeJDBCBadDataBehavior": "DISCARD_ROW",
+    "readColsWithUnknownTzAsDates": false,
+    "readSQLDateColsAsDSSDates": true,
+    "sparkJdbcAccess": "NONE",
+    "numPartitions": -1
+  },
+  "schema": {
+    "columns": [
+      {"name":"transaction_id","type":"bigint"},
+      {"name":"authorized_flag","type":"double"},
+      {"name":"purchase_date","type":"date"},
+      {"name":"card_id","type":"string","maxLength":4194304},
+      {"name":"merchant_id","type":"string","maxLength":4194304},
+      {"name":"merchant_category_id","type":"bigint"},
+      {"name":"item_category","type":"string","maxLength":4194304},
+      {"name":"purchase_amount","type":"double"},
+      {"name":"signature_provided","type":"bigint"},
+      {"name":"card_internal_card_mapping","type":"string","maxLength":4194304},
+      {"name":"card_first_active_month","type":"string","maxLength":4194304},
+      {"name":"days_active","type":"bigint"},
+      {"name":"days_active_bin","type":"string","maxLength":4194304},
+      {"name":"card_reward_program","type":"string","maxLength":4194304},
+      {"name":"card_latitude","type":"double"},
+      {"name":"card_longitude","type":"double"},
+      {"name":"card_fico_score","type":"bigint"},
+      {"name":"card_age","type":"bigint"},
+      {"name":"merchant_merchant_id","type":"string","maxLength":4194304},
+      {"name":"merchant_merchant_category_id","type":"double"},
+      {"name":"merchant_subsector_description","type":"string","maxLength":4194304},
+      {"name":"merchant_latitude","type":"double"},
+      {"name":"merchant_longitude","type":"double"},
+      {"name":"purchase_amount_abs_z_score","type":"double"},
+      {"name":"proba_0.0","type":"double"},
+      {"name":"proba_1.0","type":"double"},
+      {"name":"prediction","type":"string","maxLength":4194304}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
