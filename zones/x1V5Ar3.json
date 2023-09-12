@@ -1,12 +1,7 @@
 {
   "name": "Pat Dev",
   "color": "#0F786B",
-  "items": [
-    {
-      "objectId": "TRANSACTIONS_filtered_z_score_pmp_dev",
-      "objectType": "DATASET"
-    }
-  ],
+  "items": [],
   "shared": [],
   "tags": [],
   "customFields": {},

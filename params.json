@@ -249,11 +249,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694480550210,
+    "lastModifiedOn": 1694480845296,
     "extendedProperties": {}
   },
   "creationTag": {
