@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694477102420,
+    "lastModifiedOn": 1694477139558,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,22 +63,27 @@
   },
   "schema": {
     "columns": [
-      {"name":"transaction_id","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"authorized_flag","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"purchase_date","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"card_id","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"merchant_id","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"merchant_category_id","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"item_category","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"purchase_amount","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"signature_provided","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"internal_card_mapping","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"first_active_month","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"reward_program","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"latitude","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"longitude","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"fico_score","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304},
-      {"name":"age","type":"string","comment":"","originalType":"VARCHAR","maxLength":4194304}
+      {"name":"transaction_id","type":"string","comment":"","maxLength":4194304},
+      {"name":"authorized_flag","type":"string","comment":"","maxLength":4194304},
+      {"name":"purchase_date","type":"string","comment":"","maxLength":4194304},
+      {"name":"card_id","type":"string","comment":"","maxLength":4194304},
+      {"name":"merchant_id","type":"string","comment":"","maxLength":4194304},
+      {"name":"merchant_category_id","type":"string","comment":"","maxLength":4194304},
+      {"name":"item_category","type":"string","comment":"","maxLength":4194304},
+      {"name":"purchase_amount","type":"string","comment":"","maxLength":4194304},
+      {"name":"signature_provided","type":"string","comment":"","maxLength":4194304},
+      {"name":"card_internal_card_mapping","type":"string","comment":"","maxLength":4194304},
+      {"name":"card_first_active_month","type":"string","comment":"","maxLength":4194304},
+      {"name":"card_reward_program","type":"string","comment":"","maxLength":4194304},
+      {"name":"card_latitude","type":"string","comment":"","maxLength":4194304},
+      {"name":"card_longitude","type":"string","comment":"","maxLength":4194304},
+      {"name":"card_fico_score","type":"string","comment":"","maxLength":4194304},
+      {"name":"card_age","type":"string","comment":"","maxLength":4194304},
+      {"name":"merchant_merchant_id","type":"string","comment":"","maxLength":4194304},
+      {"name":"merchant_merchant_category_id","type":"string","comment":"","maxLength":4194304},
+      {"name":"merchant_subsector_description","type":"string","comment":"","maxLength":4194304},
+      {"name":"merchant_latitude","type":"string","comment":"","maxLength":4194304},
+      {"name":"merchant_longitude","type":"string","comment":"","maxLength":4194304}
     ],
     "userModified": true
   },
