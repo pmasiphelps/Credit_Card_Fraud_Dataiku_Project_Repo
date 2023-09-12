@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "patrick.masi-phelps@dataiku.com"
     },
-    "lastModifiedOn": 1694477327804,
+    "lastModifiedOn": 1694479003616,
     "extendedProperties": {}
   },
   "creationTag": {

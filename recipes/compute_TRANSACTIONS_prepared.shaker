@@ -96,7 +96,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateDifference",
@@ -107,6 +107,25 @@
         "input1": "card_first_active_month",
         "compareTo": "COLUMN",
         "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "BinnerProcessor",
+      "params": {
+        "output": "days_active_bin",
+        "mode": "WIDTH",
+        "input": "days_active",
+        "useMin": false,
+        "bins": [],
+        "min": 0.0,
+        "useDecimalSeparatorFromLocale": false,
+        "max": 0.0,
+        "useMax": false,
+        "width": 50.0
       },
       "alwaysShowComment": false
     }
@@ -141,6 +160,7 @@
     "merchant_latitude": 143,
     "card_position": 162,
     "merchant_merchant_id": 190,
+    "days_active_bin": 128,
     "card_fico_score": 128,
     "since_card_first_active_month_days": 270,
     "merchant_id": 127,
