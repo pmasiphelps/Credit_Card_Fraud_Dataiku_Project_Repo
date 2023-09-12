@@ -8,3 +8,4 @@ scenario = project.get_scenario("REBUILDDAILY")
 
 scenario.run_and_wait()
 
+# some code to test scenario output
