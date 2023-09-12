@@ -1,6 +1,7 @@
 {
   "tags": {
     "origin:sql_import": {},
-    "managed-snowflake": {}
+    "managed-snowflake": {},
+    "recipe-editor": {}
   }
 }
