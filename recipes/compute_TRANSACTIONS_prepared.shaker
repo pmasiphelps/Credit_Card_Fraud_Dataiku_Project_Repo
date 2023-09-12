@@ -29,8 +29,88 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "",
+        "formats": [
+          "yyyy-MM-dd HH:mm:ss"
+        ],
+        "columns": [
+          "purchase_date"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "en_US"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "error",
+            "to": "1"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "signature_provided"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "",
+        "formats": [
+          "yyyy-MM"
+        ],
+        "columns": [
+          "card_first_active_month"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "en_US"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "days_active",
+        "input2": "purchase_date",
+        "outputUnit": "DAYS",
+        "input1": "card_first_active_month",
+        "compareTo": "COLUMN",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +137,34 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "merchant_latitude": 143,
+    "card_position": 162,
+    "merchant_merchant_id": 190,
+    "card_fico_score": 128,
+    "since_card_first_active_month_days": 270,
+    "merchant_id": 127,
+    "card_longitude": 134,
+    "card_internal_card_mapping": 232,
+    "item_category": 113,
+    "purchase_date_parsed": 190,
+    "signature_provided": 150,
+    "card_age": 100,
+    "card_first_active_month_parsed": 260,
+    "transaction_id": 120,
+    "card_first_active_month": 188,
+    "days_active": 100,
+    "card_latitude": 134,
+    "merchant_category_id": 165,
+    "merchant_merchant_category_id": 233,
+    "card_id": 120,
+    "merchant_subsector_description": 240,
+    "merchant_longitude": 150,
+    "purchase_amount": 134,
+    "card_reward_program": 158,
+    "purchase_date": 148,
+    "authorized_flag": 128
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
