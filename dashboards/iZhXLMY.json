@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "iFfDesS",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "patrick.masi-phelps@dataiku.com",
+  "listed": true,
+  "name": "Credit Card Fraud\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "patrick.masi-phelps@dataiku.com"
+    },
+    "lastModifiedOn": 1694477030145,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "patrick.masi-phelps@dataiku.com"
+    },
+    "lastModifiedOn": 1694477030145,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
