@@ -325,7 +325,8 @@
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
+      "avg": true,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -482,6 +483,10 @@
           },
           {
             "name": "days_active_avg",
+            "type": "double"
+          },
+          {
+            "name": "card_age_avg",
             "type": "double"
           },
           {

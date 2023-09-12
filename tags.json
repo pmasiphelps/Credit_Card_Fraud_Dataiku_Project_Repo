@@ -1,7 +1,10 @@
 {
   "tags": {
+    "duplicated": {
+      "color": "#3A85AD"
+    },
     "origin:sql_import": {},
-    "managed-snowflake": {},
-    "recipe-editor": {}
+    "recipe-editor": {},
+    "managed-snowflake": {}
   }
 }
